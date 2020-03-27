@@ -1,0 +1,196 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    /* width: 100vw; */
+    /* display:block; */
+    /* background-position: bottom; */
+    background: rgb(152,127,129);
+    background: linear-gradient(60deg, rgba(152,127,129,1) 0%, rgba(151,176,156,1) 27%, rgba(137,141,215,1) 72%);
+    
+}
+
+
+ul {
+    padding-top: 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul, li {
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    flex-grow: 1;
+    font-size: large;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+#placements {
+    overflow: hidden;
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.3fr 1.3fr 0.7fr;
+    grid-template-rows: 0.4fr 1fr 1fr;
+    /* column-gap: 50px; */
+}
+
+.Members {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    /* Grid */
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    /* Apperances */
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white ;
+    /* Spacing */
+    z-index: 101;
+    padding: 1em;
+}
+
+.Members h3 {
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.Members div {
+    flex-grow: 1;
+}
+
+.memberTitle {
+    /* flex-grow: 2; */
+}
+
+.halfCircleBottom {
+     height: 100px;
+     width: 100%;
+     border-radius: 0 0 50% 50%;
+}
+
+
+nav {
+    /* Grid */
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* Appearances */
+    background: rgb(254,121,245);
+    background: linear-gradient(100deg, rgba(254,121,245,1) 23%, rgba(250,207,234,1) 78%);
+    color: #bcd5c7;
+    font-family: 'Tomorrow', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    /* Spacing */
+    margin-bottom: 20px;
+    z-index: 99;
+    /* Creating Oval Shape*/
+    height: 50px;
+    border-radius: 200px / 50px;
+}
+
+.behindNavBox {
+    height: 1.5em;
+    width: 7em;
+    background: rgb(93,134,127);
+    background: linear-gradient(90deg, rgba(93,134,127,0.7964227927499125) 0%, rgba(76,77,111,0.8048261540944502) 90%);
+    position: relative;
+    right: 17%;
+    z-index: -1;
+
+}
+
+.Products {
+    overflow: auto;;
+    /* Grid */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    /* Appearances */
+    background: rgb(201,182,127);
+    background: linear-gradient(60deg, rgba(201,182,127,1) 45%, rgba(179,90,193,1) 65%);
+    background-position: top;
+    font-family: 'Abel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white ;
+    font-size: 1.4em;;
+    /* Spacing */
+    margin: 30px 100px 30px 0px;
+}
+
+.Products h2 {
+    text-align: center;
+    font-size: 5em;
+}
+
+.Products p {
+    padding: 1em 2em;
+}
+
+.Grabber h3 {
+    font-size: 25px;
+    font-family: 'Abel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0px 30px 0px;
+}
+
+.Grabber p {
+    font-size: 10px;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.Grabber .news {
+    font-size: 2.3em;
+}
+
+.Grabber {
+    overflow: auto;
+    /* Grid; */
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    justify-content: stretch;
+    /* Apperances */
+    color: #bcd5c7;
+    background: rgb(195,179,178);
+    background: linear-gradient(70deg, rgba(195,179,178,0.7880194314053747) 29%, rgba(182,109,219,1) 59%);
+    /* Spacing*/
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.Social {
+    background: blue;
+    /* Grid */
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    /* Margins */
+    margin-right: 10%;
+}
+
